@@ -13,3 +13,7 @@
 .h-lg {
     height: 33.7rem;
 }
+
+.menu {
+    cursor: pointer;
+}
