@@ -1,7 +1,15 @@
 .w-96 {
-    width: 34.5rem;
+    width: 55%;
 }
 
 .h-96 {
     height: 32rem;
+}
+
+.w-custom {
+    width: 41%;
+}
+
+.h-lg {
+    height: 33.7rem;
 }
