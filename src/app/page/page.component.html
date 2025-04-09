@@ -1,4 +1,4 @@
-<div class="dashboard h-screen ml-60 mt-16 mr-4 p-6">
+<div class="dashboard h-screen ml-60 mt-16 mr-4 p-6 mb-10">
 
     <div class="grid grid-cols-12 gap-6">
         <div class="col-span-4 bg-white rounded-2xl p-6 border">
@@ -34,16 +34,16 @@
     </div>
 
     <div class="grid grid-cols-12 gap-6 mt-6">
-        <div class="col-span-8 border rounded-2xl p-6 bg-white">
+        <div class="col-span-8 height border rounded-2xl p-6 bg-white">
             <div class="flex flex-row justify-between items-center mb-4">
                 <div class="flex flex-col">
-                    <h2 class="text-lg font-bold mb-1">Monthly Sales</h2>
+                    <h2 class="text-lg font-semibold mb-1">Monthly Sales</h2>
                     <p class="text-sm">Jun 1, 2024 - Dec 1, 2025</p>
                 </div>
                 <div>
                     <div class="flex flex-row">
                         <h1 class="font-bold text-3xl mr-2">$9,758.00</h1>
-                        <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600">+7.96%</span>
+                        <span class="bg-green-100 p-2 rounded-3xl text-xs text-green-600">+7.96%</span>
                     </div>
                     <h1 class="text-xs mt-1">Total Revenue</h1>
                 </div>
@@ -51,7 +51,56 @@
             <div id="chartdiv" class="h-64"></div>
         </div>
         <div class="col-span-4 border rounded-2xl p-6 bg-white">
+            <div class="flex flex-row justify-between mb-7">
+                <h2 class="font-semibold">Top Traffic Stats & Source</h2>
+                <span class="text-center flex justify-center items-center w-8 h-8 bg-gray-100 rounded-full"><i
+                        class="menu fa-solid fa-ellipsis-vertical"></i></span>
+            </div>
 
+            <div class="flex flex-row items-center justify-center bg-gray-100 p-1 h-10 rounded-lg">
+                <button
+                    class="bg-white rounded-md border text-black px-7 py-2.5 text-xs font-medium">
+                    Today
+                </button>
+                <button class="text-gray-500 rounded-md px-7 py-2.5 text-xs font-medium">
+                    Week
+                </button>
+                <button class="text-gray-500 rounded-md px-7 py-2.5 text-xs font-medium">
+                    Month
+                </button>
+            </div>
+
+            <div class="flex flex-col mt-4">
+                <div class="flex flex-row justify-between items-center mb-2 border-b pt-1 pb-4">
+                    <img class="w-10 h-10" src="assets/google.png" alt="">
+                    <p class="text-sm text-left font-medium text-gray-600 mr-4">Google</p>
+                    <div class="w-24 bg-gray-200 rounded-full mx-2 h-1.5 overflow-hidden">
+                        <div class="bg-blue-500 h-full rounded-full" style="width:75%;"></div>
+                    </div>
+                    <p class="text-sm font-medium">75%</p>
+                </div>
+
+                <div class="flex flex-row justify-between items-center mb-4 border-b pt-1 pb-4">
+                    <img class="w-9 h-9 mr-1" src="assets/youtube.png" alt="">
+                    <p class="text-sm text-left font-medium text-gray-600 mr-2">Youtube</p>
+                    <div class="w-24 bg-gray-200 rounded-full mx-2 h-1.5 overflow-hidden">
+                        <div class="bg-blue-500 h-full rounded-full" style="width:45%;"></div>
+                    </div>
+                    <p class="text-sm font-medium">45%</p>
+                </div>
+
+                <div class="flex flex-row justify-between items-center mb-4 border-b pt-1 pb-4">
+                    <img class="w-8 mr-1 h-8" src="assets/facebook.png" alt="">
+                    <p class="text-sm text-left font-medium text-gray-600 mr-1">Facebook</p>
+                    <div class="w-24 bg-gray-200 rounded-full mx-2 h-1.5 overflow-hidden">
+                        <div class="bg-blue-500 h-full rounded-full" style="width:25%;"></div>
+                    </div>
+                    <p class="text-sm font-medium">25%</p>
+                </div>
+
+            </div>
+
+            <button class="border border-gray-400 font-medium w-full mt-4 rounded-lg p-2.5 text-xs">View All</button>
         </div>
     </div>
 </div>

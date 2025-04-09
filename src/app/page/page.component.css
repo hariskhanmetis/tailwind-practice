@@ -17,3 +17,7 @@
 .menu {
     cursor: pointer;
 }
+
+.height {
+    height: 24rem;
+}

@@ -21,7 +21,9 @@ export class PageComponent implements OnInit, OnDestroy {
       { category: "February", value: 55 },
       { category: "March", value: 60 },
       { category: "April", value: 70 },
-      { category: "May", value: 50 },
+      { category: "May", value: 78 },
+      { category: "June", value: 53 },
+      { category: "July", value: 95 },
     ];
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
