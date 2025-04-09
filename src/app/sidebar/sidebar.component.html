@@ -1,8 +1,15 @@
-<div class="sidebar bg-gray-700 text-white fixed top-14 h-screen w-56 flex">
-    <div class="menu flex flex-col m-4 gap-y-3">
-        <a href="">Dashboard</a>
-        <a href="">Reports</a>
-        <a href="">Profile</a>
-        <a href="">Settings</a>
+<div class="grid grid-cols-12">
+
+    <div class="col-span-4 sidebar bg-gray-700 text-white fixed top-14 h-screen w-56 flex">
+        <div class="menu flex flex-col m-4 gap-y-3">
+            <a routerLink="/dashboard" routerLinkActive="text-gray-400">Dashboard</a>
+            <a href="">Reports</a>
+            <a href="">Profile</a>
+            <a href="">Settings</a>
+        </div>
+    </div>
+
+    <div class="col-span-10 ml-56 mt-14 w-full">
+        <router-outlet></router-outlet>
     </div>
 </div>
