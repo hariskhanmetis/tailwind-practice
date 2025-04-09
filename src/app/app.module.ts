@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PageComponent } from './page/page.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SidebarComponent,
-    PageComponent
+    PageComponent,
+    ReportsComponent,
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
