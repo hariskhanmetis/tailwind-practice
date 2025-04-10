@@ -1,1 +1,118 @@
-<p>settings works!</p>
+<div class="settings bg-white p-6 mt-6 ml-6 mr-6 flex flex-col gap-y-6 rounded-2xl border mb-6">
+    <h1 class="text-2xl font-bold">Account Settings</h1>
+    <div class="accountSettings flex flex-row border rounded-2xl p-6 gap-6">
+        <div class="changePassword p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">Change Password</h1>
+                <p class="text-sm text-gray-500">Update your password associated with your account.</p>
+            </div>
+            <div class="flex flex-col">
+                <label for="currentPassword" class="text-gray-500 text-sm">Current Password: </label>
+                <input type="password" id="currentPassword" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="Current password">
+            </div>
+            <div class="flex flex-col">
+                <label for="newPassword" class="text-gray-500 text-sm">Enter New Password: </label>
+                <input type="password" id="newPassword" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="New password">
+            </div>
+            <div class="flex flex-col">
+                <label for="confirmPassword" class="text-gray-500 text-sm">Confirm Password: </label>
+                <input type="password" id="confirmPassword" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="Confirm password">
+            </div>
+    
+            <div>
+                <button class="border px-3 py-1 text-sm bg-blue-400 text-white rounded-xl">Save Changes</button>
+            </div>
+        </div>
+        <div class="changeEmail p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">Change Email</h1>
+                <p class="text-sm text-gray-500">Update your email address associated with your account.</p>
+            </div>
+            <div class="flex flex-col">
+                <label for="currentEmail" class="text-gray-500 text-sm">Current Email: </label>
+                <input type="email" id="currentEmail" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="Current email">
+            </div>
+            <div class="flex flex-col">
+                <label for="newEmail" class="text-gray-500 text-sm">Enter New Email: </label>
+                <input type="email" id="newEmail" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="New email">
+            </div>
+    
+            <div>
+                <button class="border px-3 py-1 text-sm bg-blue-400 text-white rounded-xl">Save Changes</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="notificationSettings flex flex-row border rounded-2xl p-6 gap-6">
+        <div class="emailNotifications p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">Email Notifications</h1>
+                <p class="text-sm text-gray-500">Manage your email notification preferences.</p>
+            </div>
+            <div class="flex flex-row items-center">
+                <input type="checkbox" id="emailNotifications" class="mr-2">
+                <label for="emailNotifications" class="text-sm text-gray-500">Receive promotional emails</label>
+            </div>
+            <div class="flex flex-row items-center">
+                <input type="checkbox" id="emailUpdates" class="mr-2">
+                <label for="emailUpdates" class="text-sm text-gray-500">Receive updates about new features</label>
+            </div>
+    
+            <div>
+                <button class="border px-3 py-1 text-sm bg-blue-400 text-white rounded-xl">Save Changes</button>
+            </div>
+        </div>
+        <div class="smsNotifications p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">SMS Notifications</h1>
+                <p class="text-sm text-gray-500">Manage your SMS notification preferences.</p>
+            </div>
+            <div class="flex flex-row items-center">
+                <input type="checkbox" id="smsNotifications" class="mr-2">
+                <label for="smsNotifications" class="text-sm text-gray-500">Receive promotional SMS</label>
+            </div>
+            <div class="flex flex-row items-center">
+                <input type="checkbox" id="smsUpdates" class="mr-2">
+                <label for="smsUpdates" class="text-sm text-gray-500">Receive updates about new features</label>
+            </div>
+    
+            <div>
+                <button class="border px-3 py-1 text-sm bg-blue-400 text-white rounded-xl">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="logoutOtherSessions ">
+        <div class="p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">Logout from Other Sessions</h1>
+                <p class="text-sm text-gray-500 w-96">Please enter your password to confirm you would like to log out of your other sessions across all of your devices.</p>
+            </div>
+            <div class="flex flex-col">
+                <label for="password" class="text-gray-500 text-sm">Your Password: </label>
+                <input type="password" id="password" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="Enter password">
+            </div>
+            <div>
+                <button class="border px-3 py-1 text-sm bg-green-500 text-white rounded-xl">Logout from Other Sessions</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="deleteAccount">
+        <div class="p-6 gap-6 w-full flex flex-col border rounded-2xl"> 
+            <div>
+                <h1 class="text-lg font-semibold">Delete Account</h1>
+                <p class="text-sm text-gray-500 w-96">No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.</p>
+            </div>
+            <div class="flex flex-col">
+                <label for="deletePassword" class="text-gray-500 text-sm">Your Password: </label>
+                <input type="password" id="deletePassword" class="text-sm border rounded-md p-2 px-3 mt-2 w-60" placeholder="Enter password">
+            </div>
+            <div>
+                <button class="border px-3 py-1 text-sm bg-red-500 text-white rounded-xl">Delete Account</button>
+            </div>
+        </div>
+    </div>
+
+    
+</div>

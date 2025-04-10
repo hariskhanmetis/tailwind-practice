@@ -10,7 +10,8 @@
             </div>
             <div class="flex flex-row justify-between items-center">
                 <h1 class="font-semibold text-lg">$1,232.00</h1>
-                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i class="fa-solid fa-arrow-up fa-sm mr-1"></i>+11.01%</span>
+                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i
+                        class="fa-solid fa-arrow-up fa-sm mr-1"></i>+11.01%</span>
             </div>
         </div>
         <div class="col-span-3 bg-white rounded-2xl p-6 border flex flex-col">
@@ -23,7 +24,8 @@
             </div>
             <div class="flex flex-row justify-between items-center">
                 <h1 class="font-semibold text-lg">$965.00</h1>
-                <span class="bg-red-100 p-1.5 rounded-3xl text-xs text-red-600"><i class="fa-solid fa-arrow-down fa-sm mr-1"></i>9.05%</span>
+                <span class="bg-red-100 p-1.5 rounded-3xl text-xs text-red-600"><i
+                        class="fa-solid fa-arrow-down fa-sm mr-1"></i>9.05%</span>
             </div>
         </div>
         <div class="col-span-3 bg-white rounded-2xl p-6 border flex flex-col">
@@ -36,7 +38,8 @@
             </div>
             <div class="flex flex-row justify-between items-center">
                 <h1 class="font-semibold text-lg">$11,689.00</h1>
-                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i class="fa-solid fa-arrow-up fa-sm mr-1"></i>9.48%</span>
+                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i
+                        class="fa-solid fa-arrow-up fa-sm mr-1"></i>9.48%</span>
             </div>
         </div>
         <div class="col-span-3 bg-white rounded-2xl p-6 border flex flex-col">
@@ -49,62 +52,165 @@
             </div>
             <div class="flex flex-row justify-between items-center">
                 <h1 class="font-semibold text-lg">$2,567.99</h1>
-                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i class="fa-solid fa-arrow-up fa-sm mr-1"></i>11.01%</span>
+                <span class="bg-green-100 p-1.5 rounded-3xl text-xs text-green-600"><i
+                        class="fa-solid fa-arrow-up fa-sm mr-1"></i>11.01%</span>
             </div>
         </div>
     </div>
 
-    <div class="table rounded-2xl mt-6 bg-white p-6 border">
-        <table class="min-w-full border">
-            <thead class="border-y border-gray-100">
+    <div class="w-full overflow-x-auto shadow-sm rounded-lg p-6 mt-6 bg-white">
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
                 <tr>
-                    <th scope="col" class="p-2 font-normal whitespace-nowrap">
-                        <div class="flex items-center">
-                            <p class="text-sm text-gray-500">Name</p>
-                        </div>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price
                     </th>
-                    <th scope="col" class="py-3 font-normal whitespace-nowrap">
-                        <div class="flex items-center">
-                            <p class="text-sm text-gray-500">Date</p>
-                        </div>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category
                     </th>
-                    <th scope="col" class="py-3 font-normal whitespace-nowrap">
-                        <div class="flex items-center">
-                            <p class="text-sm text-gray-500">Price</p>
-                        </div>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status
                     </th>
-                    <th scope="col" class="py-3 font-normal whitespace-nowrap">
-                        <div class="flex items-center">
-                            <p class="text-sm text-gray-500">Category</p>
-                        </div>
-                    </th>
-                    <th scope="col" class="py-3 font-normal whitespace-nowrap">
-                        <div class="flex items-center">
-                            <p class="text-sm text-gray-500">Status</p>
-                        </div>
-                    </th>
+                    <th scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"></th>
                 </tr>
             </thead>
-            <tbody class="divide-y divide-gray-100">
-                <tr class="bg-white border-b border-gray-200">
-                    <td class="py-3 whitespace-nowrap">
-                        <div class="col-span-3 flex items-center">
-                            <span class="mr-3"><i class="fa-brands fa-paypal fa-xl" style="color: #005eff;"></i></span>
-                            <p class="text-sm">Bought PYPL</p>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                    <td class="px-5 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-paypal fa-xl mt-1" style="color: #005eff;"></i>
+                            <div class="text-sm text-gray-900 ml-2">Bought PYPL</div>
                         </div>
                     </td>
-                    <td class="px-6 py-4">
-                        $2,567.88
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Nov 23, 01:00 PM</div>
                     </td>
-                    <td class="px-6 py-4">
-                        Finance
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">$2,567.88</div>
                     </td>
-                    <td class="px-6 py-4">
-                        Finance
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Finance</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                            Success
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 flex items-center justify-center mt-1 whitespace-nowrap text-right text-sm font-medium">
+                        <button class="text-gray-400 hover:text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-5 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-amazon fa-xl mt-1" style="color: #e76800;"></i>
+                            <div class="text-sm text-gray-900 ml-2">Sell AMZN</div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">	
+                            Feb 35, 08:00 PM
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">$5,698.55</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">E-commerce</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-600">
+                            Failed
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 flex items-center justify-center mt-1 whitespace-nowrap text-right text-sm font-medium">
+                        <button class="text-gray-400 hover:text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-apple fa-xl" style="color: #787878;"></i>
+                            <div class="text-sm text-gray-900 ml-2">Bought AAPL</div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Nov 22, 09:00 PM</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">$2,214.88</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Technology</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-orange-100 text-orange-600">
+                            Pending
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 flex items-center justify-center mt-1 whitespace-nowrap text-right text-sm font-medium">
+                        <button class="text-gray-400 hover:text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-facebook fa-xl mt-1" style="color: #1259d3;"></i>
+                            <div class="text-sm text-gray-900 ml-2">Bought FB</div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Sep 09, 02:00 AM</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">$1,445.41</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">Social mendia</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                            Success
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 flex items-center justify-center mt-1 whitespace-nowrap text-right text-sm font-medium">
+                        <button class="text-gray-400 hover:text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                        </button>
                     </td>
                 </tr>
             </tbody>
         </table>
-    
     </div>
 </div>
