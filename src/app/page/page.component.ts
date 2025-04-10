@@ -17,13 +17,13 @@ export class PageComponent implements OnInit, OnDestroy {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
 
     chart.data = [
-      { category: "January", value: 40 },
+      { category: "January", value: 48 },
       { category: "February", value: 55 },
       { category: "March", value: 60 },
       { category: "April", value: 70 },
-      { category: "May", value: 78 },
+      { category: "May", value: 63 },
       { category: "June", value: 53 },
-      { category: "July", value: 95 },
+      { category: "July", value: 76 },
     ];
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());

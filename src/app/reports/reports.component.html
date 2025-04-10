@@ -272,7 +272,7 @@
 
             <div class="flex items-center justify-center mt-6">
                 <button class="border rounded-lg px-7 py-2.5 text-sm text-gray-600">Channels Report <i
-                        class="fa-solid fa-arrow-right fa-lg ml-1"></i></button>
+                        class="fa-solid fa-arrow-right fa-sm ml-1"></i></button>
             </div>
         </div>
         <div class="topPages col-span-4 p-6 bg-white border rounded-2xl" style="height: 24.5rem;">
@@ -328,7 +328,7 @@
 
             <div class="flex items-center justify-center mt-6">
                 <button class="border rounded-lg px-7 py-2.5 text-sm text-gray-600">Channels Report <i
-                        class="fa-solid fa-arrow-right fa-lg ml-1"></i></button>
+                        class="fa-solid fa-arrow-right fa-sm ml-1"></i></button>
             </div>
         </div>
         <div class="customersDemographic col-span-5 p-6 bg-white border rounded-2xl">
@@ -339,15 +339,28 @@
                 </span>
             </div>
             <p class="text-sm text-gray-600">Number of customer based on country</p>
-            <div class="border pt-2 px-2 mt-6 rounded-xl">
-                <div id="map" class="h-full w-full rounded-xl mt-2"></div>
+            <div class="border mt-6 rounded-xl">
+                <div class="w-full h-[250px] rounded-xl shadow-md overflow-hidden" *ngIf="apiLoaded">
+                    <google-map
+                      height="100%"
+                      width="100%"
+                      [center]="center"
+                      [zoom]="zoom"
+                    >
+                      <map-marker
+                        *ngFor="let marker of markers"
+                        [position]="marker.position"
+                        [label]="marker.label"
+                      ></map-marker>
+                    </google-map>
+                  </div>
             </div>
             <div class="flex flex-col mt-6">
                 <div class="flex flex-row justify-between border-b py-3">
                     <div class="flex flex-row">
-                        <img src="assets/belgium.png" alt="" class="w-9 h-9 mr-4 mt-1">
+                        <img src="assets/pakistan.png" alt="" class="w-9 h-9 mr-4 mt-1">
                         <div class="flex flex-col justify-center items-start">
-                            <h1 class="font-semibold">Belgium</h1>
+                            <h1 class="font-semibold">Pakistan</h1>
                             <p class="text-xs text-gray-700">2,379 Customers</p>
                         </div>
                     </div>
@@ -363,7 +376,7 @@
                     <div class="flex flex-row">
                         <img src="assets/india.png" alt="" class="w-9 h-9 mr-4 mt-1">
                         <div class="flex flex-col justify-center items-start">
-                            <h1 class="font-semibold">Belgium</h1>
+                            <h1 class="font-semibold">India</h1>
                             <p class="text-xs text-gray-700">2,379 Customers</p>
                         </div>
                     </div>

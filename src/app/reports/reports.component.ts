@@ -1,24 +1,33 @@
-import { Component, AfterViewInit } from '@angular/core';
-import jsVectorMap from 'jsvectormap';
-import 'jsvectormap/dist/maps/world.js';
+import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-reports',
   templateUrl: './reports.component.html',
   styleUrls: ['./reports.component.css']
 })
-export class ReportsComponent implements AfterViewInit {
-  
-  ngAfterViewInit(): void {
-    const map = new jsVectorMap({
-      selector: '#map',
-      map: 'world',
-      zoomButtons: true,
-      regionStyle: {
-        initial: {
-          fill: '#4f46e5'
-        }
-      }
-    });
+export class ReportsComponent {
+  zoom = 4;
+  apiLoaded = false;
+
+  center: google.maps.LatLngLiteral = { lat: 33.6844, lng: 73.0479 };
+
+  markers = [
+    {
+      position: { lat: 33.6844, lng: 73.0479 },
+      label: 'Pakistan'
+    }
+  ];
+
+  constructor() {
+    if (!this.apiLoaded) {
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}`;
+      
+      script.onload = () => {
+        this.apiLoaded = true;
+      };
+      document.head.appendChild(script);
+    }
   }
 }
