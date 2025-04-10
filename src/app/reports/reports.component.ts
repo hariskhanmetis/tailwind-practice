@@ -23,7 +23,7 @@ export class ReportsComponent {
     if (!this.apiLoaded) {
       const script = document.createElement('script');
       script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}`;
-      
+      script.async = true;
       script.onload = () => {
         this.apiLoaded = true;
       };
