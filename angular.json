@@ -89,7 +89,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/styles/tailwind.css"
+              "src/styles/tailwind.css",
+              "node_modules/jsvectormap/dist/css/jsvectormap.min.css"
             ],
             "scripts": []
           }
