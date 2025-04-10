@@ -15,9 +15,11 @@ export class ReportsComponent {
   markers = [
     {
       position: { lat: 33.6844, lng: 73.0479 },
-      label: 'Pakistan'
+      label: 'Pakistan',
+      info: 'This is Pakistan, located in South Asia.'
     }
   ];
+  infoContent = '';
 
   constructor() {
     if (!this.apiLoaded) {
@@ -30,4 +32,5 @@ export class ReportsComponent {
       document.head.appendChild(script);
     }
   }
+
 }

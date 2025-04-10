@@ -1,8 +1,14 @@
 <div class="main">
-    <div class="navbar">
-        <app-nav></app-nav>
-    </div>
-    <div class="sidebar">
-        <app-sidebar></app-sidebar>
-    </div>
+    <ng-container *ngIf="isLoginPage; else mainLayout">
+        <app-login></app-login>
+    </ng-container>
+
+    <ng-template #mainLayout>
+        <div class="navbar">
+            <app-nav></app-nav>
+        </div>
+        <div class="sidebar">
+            <app-sidebar></app-sidebar>
+        </div>
+    </ng-template>
 </div>

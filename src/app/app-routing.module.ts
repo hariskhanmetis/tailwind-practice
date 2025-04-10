@@ -4,13 +4,15 @@ import { PageComponent } from './page/page.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, 
+  { path: '', redirectTo: '/login', pathMatch: 'full' }, 
+  { path: 'login', component: LoginComponent }, 
   { path: 'dashboard', component: PageComponent }, 
   { path: 'reports', component: ReportsComponent }, 
   { path: 'profile', component: ProfileComponent }, 
-  { path: 'settings', component: SettingsComponent }, 
+  { path: 'settings', component: SettingsComponent }
 ];
 
 @NgModule({
