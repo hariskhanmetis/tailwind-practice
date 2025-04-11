@@ -1,6 +1,11 @@
 <div class="main">
-    <ng-container *ngIf="isLoginPage; else mainLayout">
-        <app-login></app-login>
+    <ng-container *ngIf="isLoginPage || isRegisterPage; else mainLayout">
+        <ng-container *ngIf="isLoginPage">
+            <app-login></app-login>
+        </ng-container>
+        <ng-container *ngIf="isRegisterPage">
+            <app-register></app-register>
+        </ng-container>
     </ng-container>
 
     <ng-template #mainLayout>

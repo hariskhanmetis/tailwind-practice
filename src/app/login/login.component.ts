@@ -13,4 +13,12 @@ export class LoginComponent {
   onLogin(): void {
     this.router.navigate(['/dashboard']);
   }
+
+  onRegister(): void {
+    this.router.navigate(['/register']);
+  }
+
+  onForgotPassword(): void {
+    this.router.navigate(['/forgot-password']);
+  }
 }
