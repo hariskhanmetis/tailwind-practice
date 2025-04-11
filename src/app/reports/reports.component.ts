@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { MapInfoWindow,MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-reports',
@@ -12,11 +13,10 @@ export class ReportsComponent {
 
   center: google.maps.LatLngLiteral = { lat: 33.6844, lng: 73.0479 };
 
-  markers = [
+  markers= [
     {
       position: { lat: 33.6844, lng: 73.0479 },
       label: 'Pakistan',
-      info: 'This is Pakistan, located in South Asia.'
     }
   ];
   infoContent = '';
@@ -33,4 +33,8 @@ export class ReportsComponent {
     }
   }
 
+  @ViewChild(MapInfoWindow, { static: false }) infoWindow!: MapInfoWindow;
+  openInfoWindow(marker: any) {
+    this.infoWindow.open(marker);
+  }
 }

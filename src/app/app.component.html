@@ -1,4 +1,8 @@
 <div class="main">
+    <div *ngIf="!isLoginPage && !isRegisterPage && !isForgotPasswordPage" class="navbar">
+        <app-nav></app-nav>
+    </div>
+
     <ng-container *ngIf="isLoginPage || isRegisterPage || isForgotPasswordPage; else mainLayout">
         <ng-container *ngIf="isLoginPage">
             <app-login></app-login>
@@ -12,11 +16,11 @@
     </ng-container>
 
     <ng-template #mainLayout>
-        <div class="navbar">
-            <app-nav></app-nav>
-        </div>
-        <div class="sidebar">
+        <div *ngIf="isDashboardPage || isProfilePage || isReportPage || isSettingsPage" class="sidebar">
             <app-sidebar></app-sidebar>
+        </div>
+        <div *ngIf="isHomePage">
+            <app-home></app-home>
         </div>
     </ng-template>
 </div>

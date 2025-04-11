@@ -351,7 +351,14 @@
                         *ngFor="let marker of markers"
                         [position]="marker.position"
                         [label]="marker.label"
-                      ></map-marker>
+                        (mapClick)="openInfoWindow(marker)"
+                        (mapMouseover)="openInfoWindow(marker)"
+                        >
+                      </map-marker>
+
+                      <map-info-window #infoWindow>
+                        This is a custom info window!
+                      </map-info-window>
                     </google-map>
                   </div>
             </div>
