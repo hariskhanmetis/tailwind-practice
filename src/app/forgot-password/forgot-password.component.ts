@@ -9,8 +9,14 @@ import { Router } from '@angular/router';
 export class ForgotPasswordComponent {
   constructor(private router: Router) {}
 
+  isModalOpen: boolean = false;
+
   onResetPassword(): void {
-    this.router.navigate(['/login']);
+    this.isModalOpen = true;
+  }
+
+  closeModal(): void {
+    this.isModalOpen = false; 
   }
 
 }

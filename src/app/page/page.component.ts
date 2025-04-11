@@ -40,7 +40,8 @@ export class PageComponent implements OnInit, OnDestroy {
     series.columns.template.fillOpacity = 0.8;
 
     let columnTemplate = series.columns.template;
-    columnTemplate.strokeWidth = 2;
+    columnTemplate.width = am4core.percent(70);
+    columnTemplate.strokeWidth = 1;
     columnTemplate.strokeOpacity = 1;
 
     this.chart = chart;

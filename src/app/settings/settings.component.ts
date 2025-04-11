@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent {
+  isChangesSaved: boolean = false;
 
+  saveChanges(): void {
+    this.isChangesSaved = true;
+
+    setTimeout(() => {
+      this.isChangesSaved = false;
+    }, 5000);
+  }
 }
