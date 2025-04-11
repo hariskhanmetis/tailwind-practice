@@ -1,10 +1,13 @@
 <div class="main">
-    <ng-container *ngIf="isLoginPage || isRegisterPage; else mainLayout">
+    <ng-container *ngIf="isLoginPage || isRegisterPage || isForgotPasswordPage; else mainLayout">
         <ng-container *ngIf="isLoginPage">
             <app-login></app-login>
         </ng-container>
         <ng-container *ngIf="isRegisterPage">
             <app-register></app-register>
+        </ng-container>
+        <ng-container *ngIf="isForgotPasswordPage">
+            <app-forgot-password></app-forgot-password>
         </ng-container>
     </ng-container>
 

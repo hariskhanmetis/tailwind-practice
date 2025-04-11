@@ -9,12 +9,14 @@ import { Router } from '@angular/router';
 export class AppComponent {
   isLoginPage: boolean = false;
   isRegisterPage: boolean = false;
+  isForgotPasswordPage: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       const currentRoute = this.router.url;
       this.isLoginPage = currentRoute === '/login';
       this.isRegisterPage = currentRoute === '/register';
+      this.isForgotPasswordPage = currentRoute === '/forgot-password';
     });
   }
 }
